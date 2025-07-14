@@ -1,118 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Simos Sunset – Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Simos Sunset</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/white-wood.png');
+      background-color: #f5f7fa;
+      background-size: cover;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 20px;
-      background: #f9f9f9;
-      color: #333;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
     }
-    h1, h2 {
-      text-align: center;
-    }
-    section {
+    .section {
       margin-bottom: 40px;
     }
+    .section-title {
+      background-color: #4aabd3;
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 5px;
+    }
     .item {
-      margin: 10px 0;
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px dashed #ccc;
-      padding-bottom: 5px;
+      align-items: flex-start;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
     }
-    .category {
-      font-weight: bold;
-      margin-top: 20px;
-      text-transform: uppercase;
-      color: #2a5d84;
+    .item .names {
+      max-width: 70%;
     }
-    .price {
+    .item .names b {
+      display: block;
+      margin-bottom: 2px;
+    }
+    .item .names em {
+      color: #444;
+      font-size: 0.9em;
+    }
+    .item .price {
+      min-width: 60px;
+      text-align: right;
+      color: #333;
       font-weight: bold;
     }
   </style>
 </head>
 <body>
+  <div class="container">
 
-  <h1>Simos Sunset – Camping Elafonisos</h1>
-  <h2>Menu</h2>
+    <div class="section">
+      <div class="section-title">BREAD SNACKS</div>
+      <div class="item">
+        <div class="names">
+          <b>Toast με ζαμπόν ή γαλοπούλα, τυρί</b>
+          <em>Toast with ham or turkey, cheese</em>
+        </div>
+        <div class="price">3,00€</div>
+      </div>
+      <div class="item">
+        <div class="names">
+          <b>Λευκή Μπαγκέτα</b>
+          <em>White Baguette ham, cheese, tomato, lettuce, mayonnaise</em>
+        </div>
+        <div class="price">4,50€</div>
+      </div>
+      <!-- Add more items like above -->
+    </div>
 
-  <section>
-    <div class="category">Bread Snacks</div>
-    <div class="item"><span>Toast (ham or turkey, cheese)</span><span class="price">3,00€</span></div>
-    <div class="item"><span>White Baguette (ham, cheese, tomato, lettuce, mayo)</span><span class="price">4,50€</span></div>
-    <div class="item"><span>Rye Baguette (turkey, cheese, tomato, lettuce, mayo)</span><span class="price">4,50€</span></div>
-    <div class="item"><span>Club Sandwich (with bacon, ham, cheese, tomato, fries, lettuce, chicken salad)</span><span class="price">10,50€</span></div>
-    <div class="item"><span>Nuggets with French Fries</span><span class="price">10,00€</span></div>
-    <div class="item"><span>Fruit Salad</span><span class="price">7,00€</span></div>
-    <div class="item"><span>Finger Food Platter</span><span class="price">12,50€</span></div>
-    <div class="item"><span>Chicken Pop Corn with honey mustard</span><span class="price">10,00€</span></div>
-  </section>
+    <div class="section">
+      <div class="section-title">SALADS</div>
+      <div class="item">
+        <div class="names">
+          <b>Μανούρι & cranberry</b>
+          <em>Manouri cheese & cranberry</em>
+        </div>
+        <div class="price">9,50€</div>
+      </div>
+      <!-- Add more items -->
+    </div>
 
-  <section>
-    <div class="category">Salads</div>
-    <div class="item"><span>Manouri Cheese & Cranberry</span><span class="price">9,50€</span></div>
-    <div class="item"><span>Caesar’s Salad</span><span class="price">9,00€</span></div>
-    <div class="item"><span>Greek Salad</span><span class="price">8,50€</span></div>
-    <div class="item"><span>Dakos</span><span class="price">8,50€</span></div>
-  </section>
+    <div class="section">
+      <div class="section-title">BURGERS</div>
+      <div class="item">
+        <div class="names">
+          <b>Cheese</b>
+          <em>with brioche bread, beef patty, pickle salad, cheddar, fries</em>
+        </div>
+        <div class="price">9,00€</div>
+      </div>
+    </div>
 
-  <section>
-    <div class="category">Special Dishes</div>
-    <div class="item"><span>Pork Skewers (3pcs + fries)</span><span class="price">9,50€</span></div>
-    <div class="item"><span>Chicken Skewers (3pcs + fries)</span><span class="price">10,50€</span></div>
-  </section>
-
-  <section>
-    <div class="category">Pizza in Wood Oven</div>
-    <div class="item"><span>Margarita (cheese, tomato sauce)</span><span class="price">11,00€</span></div>
-    <div class="item"><span>Simple (cheese, tomato sauce, cold cuts)</span><span class="price">12,00€</span></div>
-    <div class="item"><span>Verde (cheese, tomato sauce, mushrooms, peppers)</span><span class="price">12,00€</span></div>
-    <div class="item"><span>Classic (sauce, cheese, bacon, ham, mushrooms)</span><span class="price">13,00€</span></div>
-    <div class="item"><span>Simos (cheese, ham, bacon, pepperoni, salami, mushrooms)</span><span class="price">15,00€</span></div>
-    <div class="item"><span>Greek (feta cheese, tomato, peppers, olives)</span><span class="price">14,00€</span></div>
-    <div class="item"><span>Rocket – Prosciutto</span><span class="price">15,00€</span></div>
-    <div class="item"><span>Tartufo (cream, truffle paste, cheese, mushrooms)</span><span class="price">13,00€</span></div>
-  </section>
-
-  <section>
-    <div class="category">Burgers</div>
-    <div class="item"><span>Cheese Burger (cheddar, pickle salad, fries)</span><span class="price">9,00€</span></div>
-    <div class="item"><span>Extreme Burger (cheddar, bacon, caramelized onion, fries)</span><span class="price">10,00€</span></div>
-    <div class="item"><span>Extra Sauce</span><span class="price">0,80€</span></div>
-  </section>
-
-  <section>
-    <div class="category">Coffee</div>
-    <div class="item"><span>Espresso Single</span><span class="price">2,50€</span></div>
-    <div class="item"><span>Espresso Double</span><span class="price">3,00€</span></div>
-    <div class="item"><span>Cappuccino Single</span><span class="price">3,50€</span></div>
-    <div class="item"><span>Freddo Cappuccino</span><span class="price">3,50€</span></div>
-    <div class="item"><span>Greek Double</span><span class="price">3,00€</span></div>
-  </section>
-
-  <section>
-    <div class="category">Juices & Soft Drinks</div>
-    <div class="item"><span>Lemonade / Orange Juice</span><span class="price">4,00€</span></div>
-    <div class="item"><span>Coca-Cola / Sprite / Fanta (330ml)</span><span class="price">2,00€</span></div>
-    <div class="item"><span>Red Bull</span><span class="price">3,50€</span></div>
-    <div class="item"><span>Amita Motion</span><span class="price">2,50€</span></div>
-    <div class="item"><span>Sparkling Water</span><span class="price">2,50€</span></div>
-    <div class="item"><span>Water (500ml / 1.5L)</span><span class="price">1,00€ / 1,50€</span></div>
-  </section>
-
-  <section>
-    <div class="category">Alcoholic Drinks</div>
-    <div class="item"><span>Ouzo 50ml / 200ml</span><span class="price">3,00€ / 9,50€</span></div>
-    <div class="item"><span>Tsipouro 50ml / 200ml</span><span class="price">3,00€ / 9,50€</span></div>
-    <div class="item"><span>Classic Drink</span><span class="price">7,00€</span></div>
-    <div class="item"><span>Special Drink</span><span class="price">8,00€</span></div>
-    <div class="item"><span>Premium Drink</span><span class="price">10,00€</span></div>
-  </section>
-
+  </div>
 </body>
 </html>
